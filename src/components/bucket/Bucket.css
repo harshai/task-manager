@@ -1,0 +1,59 @@
+.bucket {
+  flex: 1;
+  padding: 0 1rem 1rem;
+  border-left: 1px solid #CDCDCD;
+}
+
+.bucket__content {
+  margin: 0;
+  padding: 0;
+}
+
+.bucket:first-of-type {
+  border-left: none;
+}
+
+.bucket__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #CDCDCD;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.bucket__total {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.bucket--droppable {
+  outline: 4px dashed #3b99fc;
+}
+
+.bucket--not-droppable {
+  outline: 4px dashed #FF732C;
+  position: relative;
+  cursor: not-allowed;
+}
+
+.bucket--not-droppable::after {
+  content: 'Projects can only be dropped in adjacent columns';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #FF5600;
+}
+
+.bucket--not-droppable .bucket__title {
+  opacity: 0.5
+}

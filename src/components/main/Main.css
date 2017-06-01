@@ -1,0 +1,5 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  min-height: calc(100vh - 12rem);
+}
