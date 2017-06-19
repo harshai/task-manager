@@ -11,3 +11,16 @@ em {
   font-size: 1.5rem;
   color: #000;
 }
+
+.footer__link {
+  float: right;
+  color: #407FC7;
+}
+
+.footer__link:hover {
+  color: #5995DA;
+}
+
+.footer__link:active {
+  color: #3b99fc;
+}

@@ -24,6 +24,9 @@ const App = ({ buckets, total, actions, dragged }) => {
       buckets={buckets}
       dragged={dragged}
     />
+    <footer>
+      <a className="footer__link" href="https://github.com/harshai/task-manager">Source</a>
+    </footer>
   </div>
 };
 
